@@ -8,11 +8,11 @@
 # Configuration
 #
 node="https://api.eosnewyork.io"										# Node peer
-wallet_pass="PW5KPH5NpCCxxc54axSSsdfajDSFSDqNhvASdu2UAQ6QfkL1Be7WPX" 	# Wallet password (recommended: Temporary wallet)
 wallet_name="collect-wallet" 											# Wallet name (recommended: Temporary wallet)
+wallet_pass="PW5KPH5NpCCxxc54axSSsdfajDSFSDqNhvASdu2UAQ6QfkL1Be7WPX" 	# Wallet password (recommended: Temporary wallet)
 collect_account="collectacct1" 											# Receive transfer account
 airdrop_contract="eosio.token" 											# Airdrop token contract name
-airdrop_symbol="EOS" 													# Airdrop token symbol
+airdrop_symbol="EOS"													# Airdrop token symbol
 
 
 # Unlock Wallet
