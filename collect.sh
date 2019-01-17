@@ -35,7 +35,7 @@ function unlockWallet()
 #
 function clearPrivateKey()
 {
-    public_key=$(cleos-collect wallet keys | python -c "import json, sys; [sys.stdout.write(x + '\n') for x in json.load(sys.stdin)]")
+    public_key=$(cleos-collect wallet keys | python -c "import json, sys; [sys.stdout.write(public + '\n') for public in json.load(sys.stdin)]")
     for public in `echo ${public_key}`
     do
         cleos-collect wallet remove_key $public -n $wallet_name --password $wallet_pass
