@@ -7,12 +7,12 @@
 1. 配置脚本
 
 ```
-node="https://api.eosnewyork.io"	# 节点服务器地址（主网任意一个就行，如果是 BOS 等侧链，需要配置侧链的节点）
-wallet_name="collect-wallet" 		# 本地钱包名称（建议使用临时钱包）
-wallet_pass="walletpassword" 		# 本地钱包密码（建议使用临时钱包）
-collect_account="collectacct1" 		# 接收空投归集的账号（其他账号空投将转账到该账号，请认真填写）
-airdrop_contract="eosio.token" 		# 需要归集空投 Token 的合约名称，下面会列出几个主流常用，其他的可上 eospark.com 查询
-airdrop_symbol="EOS"				# 需要归集空投 Token 的简称
+node="https://api.eosnewyork.io"    # 节点服务器地址（主网任意一个就行，如果是 BOS 等侧链，需要配置侧链的节点）
+wallet_name="collect-wallet"        # 本地钱包名称（建议使用临时钱包）
+wallet_pass="walletpassword"        # 本地钱包密码（建议使用临时钱包）
+collect_account="collectacct1"      # 接收空投归集的账号（其他账号空投将转账到该账号，请认真填写）
+airdrop_contract="eosio.token"      # 需要归集空投 Token 的合约名称，下面会列出几个主流常用，其他的可上 eospark.com 查询
+airdrop_symbol="EOS"                # 需要归集空投 Token 的简称
 ```
 
 2. 配置私钥
