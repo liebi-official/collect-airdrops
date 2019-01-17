@@ -7,22 +7,18 @@
 
 # Configuration
 #
-node="https://api.eosnewyork.io"										# Node peer
+node="https://hapi.bos.eosrio.io"										# Node peer
 wallet_name="collect-wallet" 											# Wallet name (recommended: Temporary wallet)
 wallet_pass="PW5KPH5NpCCxxc54axSSsdfajDSFSDqNhvASdu2UAQ6QfkL1Be7WPX" 	# Wallet password (recommended: Temporary wallet)
 collect_account="collectacct1" 											# Receive transfer account
 airdrop_contract="eosio.token" 											# Airdrop token contract name
-airdrop_symbol="EOS"													# Airdrop token symbol
-
+airdrop_symbol="BOS"													# Airdrop token symbol
 
 # Unlock Wallet
 #	- Unlock your temporary eos wallet
 #
-function unlockWallet()
-{
-	alias cleos-collect="/usr/local/bin/cleos -u ${node}"
-	echo $wallet_pass | cleos-collect wallet unlock -n $wallet_name
-}
+alias cleos-collect="/usr/local/bin/cleos -u ${node}"
+echo $wallet_pass | cleos-collect wallet unlock -n $wallet_name
 
 # Clear Private Key
 #	- Empty the environment to prepare for this collection
@@ -80,8 +76,6 @@ function transferAirdrop()
 
 	echo "[Collect Done]: $collect_account collected total $total_amount $airdrop_symbol \n"
 }
-
-unlockWallet
 
 if [[ $1 == clear && -n $wallet_name ]]
 then
