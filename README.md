@@ -50,4 +50,4 @@ sh collect.sh clear
 | FAST | fastecoadmin |
 | TGC | eostgctoken1 |
 
-更多请访问（查看持有代币）：https://eospark.com/account/newdexpocket
+更多：https://eospark.com/account/newdexpocket
