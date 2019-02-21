@@ -71,7 +71,7 @@ function transferAirdrop()
 
             if [ "$balance" ]
             then
-                transfer=$(cleos-collect transfer ${account} ${collect_account} "$balance")
+                transfer=$(cleos-collect push action ${airdrop_contract} transfer "[\"${account}\" \"${collect_account}\" \"${balance}\" \"Collect airdrops\"]" -p ${account}@active)
                 amount=$(echo $balance | awk -F' ' '{print $1}')
                 total_amount=$(echo "scale=4; $total_amount + $amount" | bc)
     
